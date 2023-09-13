@@ -53,7 +53,7 @@ hasura migrate create migration-name --up-sql "CREATE TABLE article(id serial NO
     --from-server                 take pg_dump of schema (default: public) and Hasura metadata from the server
     --sql-from-file string        path to an SQL file which contains the SQL statements
     --schema strings              name of Postgres schema to export as a migration. provide multiple schemas with a comma separated list e.g. --schema public,user (default [public])
-    --metadata-from-file string   path to a hasura metadata file to be used for up actions
+    --metadata-from-file string   path to a hasura metadata file to be used for up actions (deprecated)
     --metadata-from-server        take metadata from the server and write it as an up migration file
     --up-sql string               sql string/query that is to be used to create an up migration
     --down-sql string             sql string/query that is to be used to create a down migration
